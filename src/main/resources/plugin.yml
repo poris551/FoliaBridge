@@ -1,0 +1,4 @@
+name: FoliaBridge
+version: '1.0-SNAPSHOT'
+main: com.rune.foliabridge.FoliaBridgePlugin
+api-version: '1.21'
