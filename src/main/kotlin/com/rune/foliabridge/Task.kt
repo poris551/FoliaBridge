@@ -71,9 +71,7 @@ object Task {
     /** 코루틴 전역 동기 실행 **/
     fun launchSync(block: suspend CoroutineScope.() -> Unit): Job {
         return CoroutineScope(Dispatchers.Default).launch {
-            runSync() {
-                runBlocking { block() }
-            }
+            block()
         }
     }
 
