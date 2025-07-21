@@ -11,11 +11,11 @@ class BukkitSchedulerAdapter(private val plugin: Plugin) : SchedulerAdapter {
     }
 
     override fun runSync(player: Player, task: () -> Unit) {
-        Bukkit.getScheduler().runTask(plugin, task)
+        // Folia 전용
     }
 
     override fun runSync(location: Location, task: () -> Unit) {
-        Bukkit.getScheduler().runTask(plugin, task)
+        // Folia 전용
     }
 
     override fun runAsync(task: () -> Unit) {
